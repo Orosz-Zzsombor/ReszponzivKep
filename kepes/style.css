@@ -1,0 +1,24 @@
+/* Mobile First */
+#gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+  
+  #gallery img {
+    width: 100%;
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    #gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 1280px) {
+    #gallery {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
